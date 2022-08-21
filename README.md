@@ -10,7 +10,7 @@ This is a quick and dirty boilerplate to bootstrap Phaser 3 games. It comes comp
 
 ## Usage
 
-To bootstrap a project using this boilerplate, either clone this repo and remove it's `.git` folder (so it's fresh for your use), or fork the repo.
+To bootstrap a project using this boilerplate, click the "Use this template" button on GitHub.
 
 Once you've got it locally, first run:
 
