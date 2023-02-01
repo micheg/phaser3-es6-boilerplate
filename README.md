@@ -7,6 +7,7 @@ This is a quick and dirty boilerplate to bootstrap Phaser 3 games. It comes comp
   - ✅ ES6 syntax support (classes, fat arrow functions, spread operator, etc.)
   - ✅ `async`/`await` support
   - ✅ Local dev server & dev / production build scripts
+  - ✅ Updated to the latest version of phaser
 
 ## Usage
 
@@ -32,4 +33,4 @@ To create a production build (it will be put in a folder called "dist/"), run:
 npm run build
 ```
 
-If you'd like to see anything else added to this project, feel free to open an issue! 😇
+this project is an updated version of: https://github.com/saricden/phaser3-es6-boilerplate
