@@ -1,18 +1,21 @@
-import {Scene} from 'phaser';
+import { Scene } from 'phaser';
 
-class BootScene extends Scene {
-  constructor() {
-    super("scene-boot");
-  }
-  
-  preload() {
-    // Load any assets here from your assets directory
-    this.load.image('cat-like', 'assets/cat-like-creature.png');
-  }
+class BootScene extends Scene
+{
+    constructor()
+    {
+        super("scene_boot");
+    }
 
-  create() {
-    this.scene.start('scene-game');
-  }
+    preload()
+    {
+        this.load.image('cat-like', 'assets/cat-like-creature.png');
+    }
+
+    create()
+    {
+        this.scene.start('scene_game');
+    }
 }
 
 export default BootScene;
