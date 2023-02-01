@@ -1,0 +1,34 @@
+// usefull capacitor plugins
+// install with
+// npm install @hugotomazi/capacitor-navigation-bar
+// npm install @capacitor/status-bar
+// npm install cordova-plugin-screen-orientation
+// npx cap update
+// npx cap sync
+// hide android navigation bar
+/*
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady()
+{
+    if ("Capacitor" in window && Capacitor.isPluginAvailable('NavigationBar'))
+    {
+        Capacitor.Plugins.NavigationBar.hide();
+    }
+    if ("Capacitor" in window && Capacitor.isPluginAvailable('StatusBar'))
+    {
+        Capacitor.Plugins.StatusBar.hide()
+    }
+}
+*/
+/*
+window.screen.orientation.lock('portrait');
+window.screen.orientation.lock('landscape');
+
+// To unlock orientation which will default back to the global setting:
+window.screen.orientation.unlock();
+
+Capacitor.Plugins. StatusBar.setOverlaysWebView({
+overlay: true
+});
+*/
