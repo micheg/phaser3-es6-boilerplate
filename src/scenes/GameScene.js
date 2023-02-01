@@ -9,6 +9,12 @@ class GameScene extends Scene
 
     create()
     {
+        let center_x = (this.cameras.main.width / 2);
+        let center_y = (this.cameras.main.height / 2);
+        // game area
+        let r1 = null;
+        if (window.portrait) r1 = this.add.rectangle(center_x, center_y, 450, 800, 0x6666ff);
+        if (window.landscape) r1 = this.add.rectangle(center_x, center_y, 800, 450, 0x6666ff);
         // Add, scale, and make up a speed for our creature
         this.cat = this.physics.add.sprite(10, 10, 'cat-like');
         this.cat.body.setAllowGravity(false);

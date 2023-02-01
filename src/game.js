@@ -3,12 +3,12 @@ import Phaser, { Game } from 'phaser';
 import BootScene from './scenes/BootScene';
 import GameScene from './scenes/GameScene';
 
-//const canvas = document.getElementById('game_area');
 const portrait = true;
 const landscape = !portrait;
 
-const height = portrait ? 800 : 450;
-const width = landscape ? 800 : 450;
+const height = (landscape) ? 450 : Math.round(450/(window.innerWidth/window.innerHeight));
+const width = (portrait) ? 450 : Math.round(450*(window.innerWidth/window.innerHeight));
+
 const canvas = document.getElementById('area');
 
 const config =
@@ -37,5 +37,8 @@ const config =
         autoCenter: Phaser.Scale.CENTER_BOTH
     }
 };
-window.$C = config;
+
+window.portrait = portrait;
+window.landscape = landscape;
+
 const game = new Game(config);
