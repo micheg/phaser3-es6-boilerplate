@@ -3,19 +3,20 @@ import Phaser, { Game } from 'phaser';
 import BootScene from './scenes/BootScene';
 import GameScene from './scenes/GameScene';
 
-const canvas = document.getElementById('game-area');
+//const canvas = document.getElementById('game_area');
 const portrait = true;
 const landscape = !portrait;
 
 const height = portrait ? 800 : 450;
-const width = landscape ? 800 : 450
+const width = landscape ? 800 : 450;
+const canvas = document.getElementById('area');
 
 const config =
 {
-    type: Phaser.AUTO,
-    width,
-    height,
-    canvas,
+    type: Phaser.WEBGL,
+    width: width,
+    height: height,
+    canvas : canvas,
     physics:
     {
         default: 'arcade',
@@ -29,7 +30,12 @@ const config =
     [
         BootScene,
         GameScene
-    ]
+    ],
+    scale:
+    {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    }
 };
-
+window.$C = config;
 const game = new Game(config);

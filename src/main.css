@@ -9,3 +9,8 @@ canvas
 {
     display: block;
 }
+
+body
+{
+    background: black;
+}
